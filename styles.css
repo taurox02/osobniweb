@@ -1,0 +1,395 @@
+body {
+  background-image: url(pics/backgrounds/bg_1.jpg),
+    url(pics/backgrounds/bg_2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 18.5% 100%, 18.5% 100%;
+  background-position: left, right;
+  background-color: #595959;
+  background-attachment: fixed, fixed;
+  max-width: 63%;
+  padding: 0 5px;
+  margin: 0px auto;
+  box-shadow: 0px 0px 10px 12px #595959;
+}
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: none;
+    background-size: 0, 0;
+    min-width: 100%;
+    margin: 0;
+  }
+}
+header {
+  color: #ffffff;
+  background-image: url("pics/backgrounds/gray.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px yellowgreen,
+    0 0 30px yellowgreen, 0 0 40px yellowgreen, 0 0 55px yellowgreen,
+    0 0 75px yellowgreen;
+  margin: 0px;
+  padding: 20px;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+nav {
+  background-color: #ccc;
+  color: black;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-flex;
+  padding: 5px 15px;
+}
+nav li:hover {
+  background-color: #999999;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer {
+  background-image: url("pics/backgrounds/gray.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+p.csfd {
+  color: white;
+}
+p.imdb {
+  color: white;
+}
+p.edna {
+  color: #2aacd2;
+}
+p.info {
+  color: #b3b3b3;
+  padding: 0.2em;
+  margin: 0.2em;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+p.myopinion {
+  color: white;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  padding: 0 0.5em;
+}
+p.me {
+  display: block;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  border-top: 20px solid yellowgreen;
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+  margin: 0.53333%;
+}
+span.me {
+  z-index: 1;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+  background-color: #5c7b1e;
+  display: block;
+  text-align: center;
+  height: 420px;
+  width: 34%;
+  margin: 2% 33%;
+}
+div.plak {
+  height: 314px;
+  background-color: #5c7b1e;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+img.me {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  border: 4px solid #2e3e0f;
+}
+img.plak {
+  display: inline-flex;
+  height: 290px;
+  width: 16%;
+  padding: 0;
+  margin: 0.186%;
+  border-radius: 3%;
+  border: 4px solid #2e3e0f;
+}
+div.container {
+  padding: 10px;
+  width: 100%;
+  overflow: auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  background: gray;
+  margin: 50px 0;
+}
+div.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.ranking:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.poster,
+div.info,
+div.ranking,
+div.trailer,
+div.myopinion {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+  margin: 0.53333%;
+  float: left;
+}
+div.info,
+div.myopinion {
+  border-top: 20px solid yellowgreen;
+  background-color: #333333;
+  color: white;
+}
+div.poster,
+div.trailer {
+  background-color: #5c7b1e;
+}
+div.poster {
+  width: 25%;
+  height: 440px;
+}
+div.info {
+  width: 51.8%;
+  height: 440px;
+}
+div.ranking {
+  width: 20%;
+  height: 440px;
+  background: linear-gradient(135deg, #7da428 0%, #b8dc6f 50%, #d7ebad 100%);
+}
+div.trailer {
+  width: 42%;
+  height: 280px;
+}
+div.myopinion {
+  width: 55.87%;
+  height: 280px;
+}
+div.bbmyrank,
+div.bbcsfd,
+div.bbimdb,
+div.bbedna {
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 50%;
+  border: 4px solid #5c7b1e;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-left: 12px;
+}
+div.bbmyrank {
+  background-color: white;
+}
+div.bbcsfd {
+  background-color: #bb0011;
+}
+div.bbimdb {
+  background-color: #333333;
+}
+div.bbedna {
+  background-color: #e6e6e6;
+}
+span.pageH {
+  color: black;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 0 0 10px #ccffef;
+}
+span.pageH {
+  margin-top: 70px;
+  padding: 1em;
+  display: inline-block;
+}
+div.pageH {
+  background-image: url("pics/backgrounds/haluz.jpg");
+  background-size: 100% 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-align: center;
+  height: 392px;
+  border-bottom: 5px solid black;
+}
+h3.info {
+  color: white;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  padding: 0.2em;
+  margin: 0.2em;
+  margin-top: 0;
+  text-align: center;
+  text-shadow: -0.07em 0.07em 0 rgb(230, 230, 230, 0.2);
+}
+h4.myopinion {
+  color: white;
+  font-size: 1.8rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  padding: 0 0.5em;
+  margin: 0;
+}
+h2.nadpis {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  padding: 10px;
+  margin: 0.8em 0;
+  background-color: #333333;
+  border-radius: 10px;
+  border-top: 10px solid yellowgreen;
+  text-shadow: -0.07em 0.07em 0 rgb(230, 230, 230, 0.2);
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+ul.info {
+  color: white;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img.poster,
+iframe.trailer {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 4px solid #2e3e0f;
+}
+img.logo,
+img.myrank {
+  width: 80px;
+  height: 80px;
+}
+img.myrank {
+  border-radius: 15px;
+}
+img.logo:hover,
+img.myrank:hover {
+  filter: grayscale(40%) opacity(80%);
+}
+table.ranking {
+  width: 100%;
+  height: 100%;
+}
+table.ranking th {
+  width: 50%;
+}
+table.ranking tr {
+  height: 25%;
+}
+table.ranking p {
+  text-align: center;
+  margin-top: 19px;
+}
+table.game {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+table.game th {
+  width: 33.33%;
+  padding: 0;
+}
+img.talent {
+  height: 220px;
+  display: inline-flex;
+  margin: 0.1%;
+  padding: 0;
+  border-radius: 15px;
+  border: 4px solid #2e3e0f;
+  margin-top: 4px;
+}
+iframe.talent {
+  height: 220px;
+  width: 392px;
+  display: inline-flex;
+  margin: 0.1%;
+  padding: 0;
+  border-radius: 15px;
+  border: 4px solid #2e3e0f;
+}
+div.plak2 {
+  overflow: auto;
+  background-color: #5c7b1e;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+  text-align: center;
+}
+div.zajmy {
+  padding: 10px;
+  margin-bottom: 1%;
+  border-top: 20px solid yellowgreen;
+  background-color: #333333;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+div.zajmy p {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  padding: 0;
+  margin: 0 10px;
+}
+img.hry {
+  width: 300px;
+  height: 420px;
+  margin: 10% 0;
+  padding: 0;
+  border-radius: 15px;
+  border: 4px solid #2e3e0f;
+}
+#k {
+  color: #595959;
+}
